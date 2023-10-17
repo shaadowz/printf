@@ -11,6 +11,8 @@ int _putchar(char c);
 int _char(va_list var);
 int _str(va_list var);
 int _perc(void);
+int _len(char *str);
+int _lenc(const char *str);
 
 
 #endif

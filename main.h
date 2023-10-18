@@ -19,6 +19,10 @@ typedef struct check
 	int (*funptr)();
 } checker;
 
+int _bin(va_list val);
+int _hex_aux(unsigned long int number);
+int _strrev(va_list args);
+int _rot13(va_list args);
 int _putchar(char c);
 int _char(va_list var);
 int _str(va_list var);

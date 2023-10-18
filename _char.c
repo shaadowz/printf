@@ -12,6 +12,6 @@ int _char(va_list var)
 	char p;
 
 	p = va_arg(var, int);
-	_putchar(s);
+	_putchar(p);
 	return (1);
 }

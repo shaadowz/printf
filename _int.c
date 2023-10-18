@@ -10,7 +10,7 @@
 int _int(va_list myNums)
 {
 	int numbers = va_arg(myNums, int);
-	int nums, lastNum = n % 10, dig, mul = 1;
+	int nums, lastNum = numbers % 10, dig, mul = 1;
 	int count = 1;
 
 	numbers = numbers / 10;
@@ -22,11 +22,11 @@ int _int(va_list myNums)
 		nums = -nums;
 		numbers = -numbers;
 		lastNum = -lastNum;
-		count++
+		count++;
 	}
 	if (nums > 0)
 	{
-		while (num / 10 != 0)
+		while (nums / 10 != 0)
 		{
 			mul = mul * 10;
 			nums = nums / 10;
@@ -38,7 +38,7 @@ int _int(va_list myNums)
 			_putchar(dig + '0');
 			nums = nums - (dig * mul);
 			mul = mul / 10;
-			count++
+			count++;
 		}
 	}
 	_putchar(lastNum + '0');
@@ -57,7 +57,7 @@ int _int(va_list myNums)
 int _decimal(va_list myNums)
 {
 	int numbers = va_arg(myNums, int);
-	int nums, lastNum = n % 10, dig, mul = 1;
+	int nums, lastNum = numbers % 10, dig, mul = 1;
 	int count = 1;
 
 	numbers = numbers / 10;
@@ -69,11 +69,11 @@ int _decimal(va_list myNums)
 		nums = -nums;
 		numbers = -numbers;
 		lastNum = -lastNum;
-		count++
+		count++;
 	}
 	if (nums > 0)
 	{
-		while (num / 10 != 0)
+		while (nums / 10 != 0)
 		{
 			mul = mul * 10;
 			nums = nums / 10;
@@ -85,7 +85,7 @@ int _decimal(va_list myNums)
 			_putchar(dig + '0');
 			nums = nums - (dig * mul);
 			mul = mul / 10;
-			count++
+			count++;
 		}
 	}
 	_putchar(lastNum + '0');

@@ -9,7 +9,7 @@
 
 int _str(va_list var)
 {
-	int count, len;
+	int count, lenght;
 	char *p;
 
 	p = va_arg(var, char *);
@@ -18,14 +18,14 @@ int _str(va_list var)
 		p = "(null)";
 		lenght = _len(p);
 		for (count = 0; count < lenght; count++)
-			_putchar(p[i]);
+			_putchar(p[count]);
 		return (lenght);
 	}
 	else
 	{
 		lenght = _len(p);
 		for (count = 0; count < lenght; count++)
-			_putchar(p[i]};
+			_putchar(p[count]);
 		return (lenght);
 	}
 }

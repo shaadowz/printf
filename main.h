@@ -42,6 +42,7 @@ int _lenc(const char *str);
 int _int(va_list myNums);
 int _dec(va_list myNums);
 int _printf(const char *format, ...);
-
+int _flag(char s, flags_t *f);
+int (*get_print(char s))(va_list, flags_t *);
 
 #endif

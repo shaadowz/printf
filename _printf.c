@@ -14,7 +14,7 @@ int _printf(const char * const format, ...)
 		{"%%", _perc},
 		{"%i", _int}, {"%d", _dec}, {"%b", _bin}, {"%u", _unsigned},
 		{"%o", _oct}, {"%x", _hex}, {"%X", _HEXi},
-		{"%s", _exc_str}, {"%p", _ptr}, {"%r", _strrev}, {"%R", _rot13}
+		{"%S", _exc_str}, {"%p", _ptr}, {"%r", _strrev}, {"%R", _rot13}
 	};
 
 	va_list arg_list;

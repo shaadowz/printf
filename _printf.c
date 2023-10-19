@@ -13,7 +13,8 @@ int _printf(const char * const format, ...)
 		{"%s", _str}, {"%c", _char},
 		{"%%", _perc},
 		{"%i", _int}, {"%d", _dec}, {"%b", _bin}, {"%u", _unsigned},
-		{"%o", _oct}, {"%x", _hex}, {"%X", _HEXi}
+		{"%o", _oct}, {"%x", _hex}, {"%X", _HEXi},
+		{"%s", _exc_str}, {"%p", _ptr}, {"%r", _strrev}, {"%R", _rot13}
 	};
 
 	va_list arg_list;
@@ -26,7 +27,7 @@ int _printf(const char * const format, ...)
 Processing:
 	while (format[index] != '\0')
 	{
-		i = 9;
+		i = 12;
 		while (i >= 0)
 		{
 			if (a[i].identifier[0] == format[index] &&

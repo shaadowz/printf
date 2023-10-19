@@ -27,7 +27,7 @@ int _printf(const char * const format, ...)
 Processing:
 	while (format[index] != '\0')
 	{
-		i = 12;
+		i = 13;
 		while (i >= 0)
 		{
 			if (a[i].identifier[0] == format[index] &&

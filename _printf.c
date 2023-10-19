@@ -12,7 +12,8 @@ int _printf(const char * const format, ...)
 	checker a[] = {
 		{"%s", _str}, {"%c", _char},
 		{"%%", _perc},
-		{"%i", _int}, {"%d", _dec}, {"%b", _bin}
+		{"%i", _int}, {"%d", _dec}, {"%b", _bin}, {"%u", _unsigned},
+		{"%o", _oct}, {"%x", _hex}, {"%X", _HEXi}
 	};
 
 	va_list arg_list;
@@ -25,7 +26,7 @@ int _printf(const char * const format, ...)
 Processing:
 	while (format[index] != '\0')
 	{
-		i = 5;
+		i = 9;
 		while (i >= 0)
 		{
 			if (a[i].identifier[0] == format[index] &&

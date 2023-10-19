@@ -25,6 +25,8 @@ int _strrev(va_list args);
 int _rot13(va_list args);
 int _unsigned(va_list args);
 int _oct(va_list val);
+int _hex(va_list val);
+int _HEXi(va_list val);
 int _putchar(char c);
 int _char(va_list var);
 int _str(va_list var);

@@ -32,7 +32,7 @@ int _perc(void);
 int _len(char *str);
 int _lenc(const char *str);
 int _int(va_list myNums);
-int _decimal(va_list myNums);
+int _dec(va_list myNums);
 int _printf(const char *format, ...);
 
 

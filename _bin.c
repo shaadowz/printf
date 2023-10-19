@@ -32,4 +32,3 @@ int _bin(va_list val)
 	}
 	return (cont);
 }
-

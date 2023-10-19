@@ -48,13 +48,13 @@ int _int(va_list myNums)
 
 
 /**
- * _decimal - function that prints integer
+ * _dec - function that prints integer
  * @myNums: input
  *
  * Return: number of characters it printed
  */
 
-int _decimal(va_list myNums)
+int _dec(va_list myNums)
 {
 	int numbers = va_arg(myNums, int);
 	int nums, lastNum = numbers % 10, dig, mul = 1;
